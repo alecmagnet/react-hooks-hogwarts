@@ -1,4 +1,4 @@
-import PigCard from "./PigCard"
+import SinglePigCard from "./SinglePigCard"
 import React, { useState } from 'react'
 
 function PigCards( {pigs} ) {
@@ -39,7 +39,7 @@ function PigCards( {pigs} ) {
 				{pigsToDisplay.map((eachPig) => {
 					return (
 						<>
-							<PigCard id={eachPig.name} name={eachPig.name} image={eachPig.image} specialty={eachPig.specialty} weight={eachPig.weight} greased={eachPig.greased} medal={eachPig["highest medal achieved"]}/>
+							<SinglePigCard id={eachPig.name} name={eachPig.name} image={eachPig.image} specialty={eachPig.specialty} weight={eachPig.weight} greased={eachPig.greased} medal={eachPig["highest medal achieved"]}/>
 						</>
 					)
 				})}
@@ -48,4 +48,5 @@ function PigCards( {pigs} ) {
 	)
 }
 
-export default PigCards
+export default PigCards;
+//ignore

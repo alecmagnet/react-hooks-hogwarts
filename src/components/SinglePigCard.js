@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function PigCard( {name, image, specialty, weight, greased, medal, key }) {
+function SinglePigCard( {name, image, specialty, weight, greased, medal, key }) {
 	const [pigClicked, setPigClicked] = useState(false) 
 
 	const handleClick = () => {
@@ -27,4 +27,4 @@ function PigCard( {name, image, specialty, weight, greased, medal, key }) {
 	)
 }
 
-export default PigCard
+export default SinglePigCard
